@@ -20,11 +20,11 @@
         state: started
         
     - name: stop container
-      shell: docker stop calculator
+      shell: docker stop calc
       
       
     - name: rm container
-      shell: docker rm calculator
+      shell: docker rm calc
       
      
     - name: Running container
