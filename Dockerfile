@@ -5,4 +5,6 @@ WORKDIR /app
 # Copy the calculator.sh script into the container
 COPY calculator.jar /app/calculator.jar
 
+RUN chmod +x /app/calculator.jar
+
 CMD ["java","-jar","/calculator.jar"]
