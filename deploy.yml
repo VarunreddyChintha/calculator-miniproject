@@ -28,4 +28,4 @@
       
      
     - name: Running container
-      shell: docker run -it -d --name calc varun000reddy/calculator-miniproject 
+      shell: docker run -it -d --name calc varun000reddy/calculator-miniproject /bin/bash
