@@ -28,4 +28,4 @@
       
      
     - name: Running container
-      shell: docker run -it -d --name calculator -p 8082:8082 varun000reddy/calculator-miniproject
+      shell: docker run -it -d --name calc -p 8082:8082 varun000reddy/calculator-miniproject
