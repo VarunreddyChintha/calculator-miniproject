@@ -7,4 +7,4 @@ COPY calculator.jar /app/calculator.jar
 
 EXPOSE 8082
 
-CMD ["java","-jar","calculator.jar"]
+ENTRYPOINT ["java","-jar","calculator.jar"]
