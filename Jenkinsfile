@@ -10,7 +10,6 @@ pipeline {
     environment {
         DOCKER_IMAGE_NAME = 'calculator-miniproject'
         GITHUB_REPO_URL = 'https://github.com/VarunreddyChintha/calculator-miniproject.git'
-        IMAGE_NAME='varun000reddy@gmail.com'
     }
 
     stages {
