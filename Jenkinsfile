@@ -10,6 +10,7 @@ pipeline {
     environment {
         DOCKER_IMAGE_NAME = 'calculator-miniproject'
         GITHUB_REPO_URL = 'https://github.com/VarunreddyChintha/calculator-miniproject.git'
+        IMAGE_NAME='varun000reddy@gmail.com'
     }
 
     stages {
@@ -61,5 +62,14 @@ pipeline {
             }
         }
 
+    }
+     post {
+        always {
+            mail(
+                to: 'varun000reddy@gmail.com',
+                subject: "Build ${currentBuild.currentResult}",
+                body: "Build URL: ${env.BUILD_URL}"
+            )
+        }
     }
 }
