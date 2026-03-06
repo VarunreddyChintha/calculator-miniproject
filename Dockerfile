@@ -4,4 +4,4 @@ WORKDIR /app
 
 COPY target/calculator.jar /app/calculator.jar
 
-ENTRYPOINT ["java","-jar","/app/calculator.jar"]
+CMD ["java","-jar","/app/calculator.jar"]
